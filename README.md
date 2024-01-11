@@ -98,8 +98,6 @@ git merge <otherBranchToBeMergeInCurrentBranch>
 git remote add origin <gitHubLink> 
 ```
 
-## Other essential git command
-
 # VCS(Version Control System) 
 - Is a system that records changes to a file or set of files overtime. So that you can recall specific version later.
 
@@ -157,4 +155,15 @@ git commit -m <commitMessage>
 - Push the files in your local repository in remote repository.
 ```
 git push origin <remoteRepoDefaultBranchName>
+```
+
+# Abort the branch merging
+```
+git branch --abort
+```
+
+# Count total lines of your project based on file extension
+- Just replace the .java inside " "
+```
+git ls-files | grep "\.java$" | xargs wc -l
 ```
