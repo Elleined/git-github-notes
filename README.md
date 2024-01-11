@@ -23,19 +23,56 @@ Notes for git amd github
 - ###### git mv 
 - ###### git show
 - ###### git rebase
-
-## Essential git command operations
 - ###### git help
+## Essential git command operations
 - ###### git init
-- ###### git config  
-- ###### git add  
-- ###### git status  
-- ###### git restore  
-- ###### git commit  
-- ###### git log  
-- ###### git clone  
-- ###### git push  
-- ###### git pull  
+- Will initialized a local repository in current directory.
+```
+git init
+```
+- ###### git config
+- Will setup the username and email throughout the whole machine. check how to setup git below.
+
+- ###### git add
+- Will moved the files in youre working area into staging area.
+```
+git add .
+```
+- ###### git status
+- Will check if you have unstaged files and uncommited files.
+```
+git status
+```
+- ###### git restore
+- Will restore modified files into the last commit version of the file.
+```
+git restore .
+```
+- ###### git commit
+- Will moved the staged files into local repository to be saved permanently.
+```
+git commit -m <commitMessage> 
+```
+- ###### git log
+- Will see all the commit history
+```
+git log
+```
+- ###### git clone
+- Will clone a public repository in your local machine literally just downloading a project from github.
+```
+git clone <gitHubLink> 
+```
+- ###### git push
+- Will saved all the files in youre local repo into remote repo.
+```
+git push origin <remoteRepoDefaultBranchName>
+```
+- ###### git pull
+- Will pull the latest changes of code from remote repo into your local repo.
+```
+git pull origin <remoteRepoDefaultBranchName>
+``` 
 - ###### git branch will list all available branch in your local repo
 ```
 git branch
@@ -106,4 +143,18 @@ git config --global user.name <yourGithubUsername>
 ```
 ```
 git config --global user.email <yourRegisteredEmailInGithub>
+```
+
+# Basic file workflow
+- Add the newly created in stage area by executing this command.
+```
+git add.
+```
+- Commit the staged files to be saved in local repository by executing this command.
+```
+git commit -m <commitMessage>
+```
+- Push the files in your local repository in remote repository.
+```
+git push origin <remoteRepoDefaultBranchName>
 ```
