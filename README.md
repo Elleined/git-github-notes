@@ -167,3 +167,8 @@ git branch --abort
 ```
 git ls-files | grep "\.java$" | xargs wc -l
 ```
+
+# Go back in certain project version
+```
+git checkout <commitHash>
+```
