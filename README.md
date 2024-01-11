@@ -41,7 +41,7 @@ Notes for git amd github
 - ###### git merge  
 - ###### git remote
 
-# Other essential git command
+## Other essential git command
 
 # VCS(Version Control System) 
 - Is a system that records changes to a file or set of files overtime. So that you can recall specific version later.
@@ -60,6 +60,7 @@ Notes for git amd github
 
 ##### Git Client
 - Used to access the git server tools
+- Can be dowloaded in [https://git-scm.com/download/win]
 
 - #### Git Client Tools:
 - ###### Git Bash(✅)
@@ -67,4 +68,22 @@ Notes for git amd github
 - ###### Git CMD
 - ###### Github Desktop
 
+# Git Architecture
+![image](https://github.com/Elleined/git-github-notes/assets/111877930/3969a84f-6d71-44f4-acb9-cb0d2b9354e0)
+- **Working area**: It is you're local project that the developer is working on.
+- **Stage area**: This will be the bridge to your working area to local repository. Means that the files in staging area are candidate to be saved in local repository.
 
+- **Local Repository**: Now that youre files is in local repository all files in here are candidate for moving into remote repository which is the git server like github.
+
+###### Note: we cannot skip even one process it strictly first in working area then staging area then local repository then remote repository.
+
+# Setting up git in you machine
+- Install git from link above(Next, next no other config while installing)
+- Open git bash(Anywhere directory in your machine)
+- run this command
+```
+git config --global user.name <yourGithubUsername>
+```
+```
+git config --global user.email <yourRegisteredEmailInGithub>
+```
