@@ -36,10 +36,30 @@ Notes for git amd github
 - ###### git clone  
 - ###### git push  
 - ###### git pull  
-- ###### git branch  
-- ###### git checkout  
-- ###### git merge  
+- ###### git branch will list all available branch in your local repo
+```
+git branch
+```
+- ###### git checkout
+- Will switch into another branch.
+```
+git checkout <branchName>
+```
+- ###### git checkout with new branch
+- Will create a new branch from the current branch.
+```
+git checkout -b <branchName>
+```
+- ###### git merge
+- Will merge the specified branch with the current branch
+```
+git merge <otherBranchToBeMergeInCurrentBranch>
+```  
 - ###### git remote
+- Will connect to a remote repository
+```
+git remote add origin <gitHubLink> 
+```
 
 ## Other essential git command
 
