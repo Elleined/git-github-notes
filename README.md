@@ -172,3 +172,8 @@ git ls-files | grep "\.java$" | xargs wc -l
 ```
 git checkout <commitHash>
 ```
+
+# Delete branch in your local repository
+```
+git branch -d <branchNameYouWantToDelete>
+```
