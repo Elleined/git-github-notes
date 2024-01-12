@@ -82,11 +82,6 @@ git branch
 ```
 git checkout <branchName>
 ```
-- ###### git checkout with new branch
-- Will create a new branch from the current branch.
-```
-git checkout -b <branchName>
-```
 - ###### git merge
 - Will merge the specified branch with the current branch
 ```
@@ -176,4 +171,8 @@ git checkout <commitHash>
 # Delete branch in your local repository
 ```
 git branch -d <branchNameYouWantToDelete>
+```
+# Git checkout with new branch
+```
+git checkout -b <branchName>
 ```
