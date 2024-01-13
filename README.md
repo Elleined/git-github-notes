@@ -176,3 +176,9 @@ git branch -d <branchNameYouWantToDelete>
 ```
 git checkout -b <branchName>
 ```
+
+# Allow unrelated commit history
+```
+git pull origin <branchName> --allow-unrelated-histories
+
+```
