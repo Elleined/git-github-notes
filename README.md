@@ -182,3 +182,16 @@ git checkout -b <branchName>
 git pull origin <branchName> --allow-unrelated-histories
 
 ```
+
+# Use git in linux
+- Create Personal Access Token on GitHub
+From your GitHub account, go to Settings → Developer Settings → Personal Access Token → Tokens (classic) → Generate New Token (Classic) → Fillup the form (Check everything) → click Generate token → Copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta.
+
+### Permanently authenticating with Git repositories
+```
+$ git config credential.helper store
+$ git push https://github.com/repo.git
+
+Username for 'https://github.com': <USERNAME>
+Password for 'https://USERNAME@github.com': <Personal Access Token You Created Above>
+```
