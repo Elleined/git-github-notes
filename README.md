@@ -195,3 +195,14 @@ $ git push https://github.com/repo.git
 Username for 'https://github.com': <USERNAME>
 Password for 'https://USERNAME@github.com': <Personal Access Token You Created Above>
 ```
+
+# Create usefull git alias
+- This command contains git add . | git commit -m "Message" | git push origin main
+```bash
+git config --global alias.all '!f() { git add . && git commit -m "$1" && git push origin main; }; f'
+```
+
+- To use the command
+```
+git all "Message"
+```
