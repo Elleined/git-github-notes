@@ -202,6 +202,11 @@ Password for 'https://USERNAME@github.com': <Personal Access Token You Created A
 git config --global alias.all '!f() { git add . && git commit -m "$1" && git push origin "$2" && git status; }; f'
 ```
 
+- Initialize your repo with steroids (Only if you created the repo in github)
+```
+git config --global alias.start '!f() { git add . && git commit -m "$1" && git branch -M main && git remote add origin "$2" && git pull origin main --rebase && git push origin main; }; f'
+```
+
 - To use the command
 ```
 git all "your commit message" your-branch-name
