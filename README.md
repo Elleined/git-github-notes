@@ -180,7 +180,6 @@ git checkout -b <branchName>
 # Allow unrelated commit history
 ```
 git pull origin <branchName> --allow-unrelated-histories
-
 ```
 
 # Use git in linux
@@ -211,3 +210,6 @@ git config --global alias.start '!f() { git add . && git commit -m "$1" && git b
 ```
 git all "your commit message" your-branch-name
 ```
+
+- [Git submodule](https://mathspp.com/blog/til/nested-git-repositories#:~:text=To%20nest%20a%20repository%20inside,the%20command%20git%20submodule%20add%20.)
+
